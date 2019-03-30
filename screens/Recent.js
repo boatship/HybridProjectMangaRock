@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, SafeAreaView, StyleSheet, ScrollView } from 'react-native';
+import { Header } from 'react-native-elements';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default class Recent extends Component {
   constructor(props) {
@@ -11,7 +13,20 @@ export default class Recent extends Component {
   render() {
     return (
       <View>
-        <Text> Recent </Text>
+        <Header
+          placement="right"
+          backgroundColor="white"
+          leftComponent={{ text: 'Recent', style: { fontSize: 20, color: 'black' } }}
+          centerComponent={{ icon: 'search', color: 'black' }}
+          rightComponent={{ icon: 'more-vert', color: 'black' }}
+          containerStyle={{
+            elevation: 4,
+            shadowOffset: { width: 5, height: 5 },
+            shadowColor: "grey",
+            shadowOpacity: 0.5,
+            shadowRadius: 10,
+          }}
+        />
       </View>
     );
   }

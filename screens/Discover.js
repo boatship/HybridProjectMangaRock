@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { View, Text, SafeAreaView, StyleSheet, ScrollView} from 'react-native';
 import {Header} from 'react-native-elements';
 import MaterialTabs from 'react-native-material-tabs';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+
 import {
   createStackNavigator,
   createMaterialTopTabNavigator,
@@ -51,6 +53,10 @@ const Discover = createStackNavigator({
       },
       headerTintColor: 'black',
       title: 'Manga Rock',
+      headerCenter: (
+        <Ionicons name='md-arrow-dropdown' size={20} color='black'/>),
+      headerRight: (
+        <Ionicons name='md-search' size={20} color='black' />)
     },
   },
 });

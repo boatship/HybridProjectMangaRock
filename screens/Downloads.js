@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, SafeAreaView, StyleSheet, ScrollView} from 'react-native';
-import {Header} from 'react-native-elements';
-import MaterialTabs from 'react-native-material-tabs';
+import { View, Text, SafeAreaView, StyleSheet, ScrollView } from 'react-native';
+import { Header } from 'react-native-elements';
 
 export default class Downloads extends Component {
   constructor(props) {
@@ -10,47 +9,24 @@ export default class Downloads extends Component {
     };
   }
 
-  state = {
-    selectedTab: 0,
-  };
- 
-  setTab = selectedTab => {
-    this.setState({ selectedTab });
-  };
-
   render() {
     return (
       <View>
-        
         <Header
           placement="right"
           backgroundColor="white"
-          leftComponent={{ text: 'Downloads', style: { fontSize:20,color: 'black' } }}
-          centerComponent={{icon : 'search', color: 'black'}}
-          rightComponent={{ icon: 'md-more', color: 'black' }}
+          leftComponent={{ text: 'Downloads', style: { fontSize: 20, color: 'black' } }}
+          centerComponent={{ icon: 'search', color: 'black' }}
+          rightComponent={{ icon: 'more-vert', color: 'black' }}
+          containerStyle={{
+            elevation: 4,
+            shadowOffset: { width: 5, height: 5 },
+            shadowColor: "grey",
+            shadowOpacity: 0.5,
+            shadowRadius: 10,
+          }}
         />
-        
-        <SafeAreaView style={styles.container}>
-        <MaterialTabs
-          items={['One', 'Two', 'Three', 'Four', 'Five']}
-          selectedIndex={this.state.selectedTab}
-          onChange={this.setTab}
-          barColor="#1fbcd2"
-          indicatorColor="#fffe94"
-          activeTextColor="white"
-        />
-      </SafeAreaView>
-      <ScrollView>
-      
-      </ScrollView>
       </View>
-
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});

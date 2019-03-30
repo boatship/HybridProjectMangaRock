@@ -20,14 +20,15 @@ export default class More extends Component {
             style: { fontSize: 20, color: "black" }
           }}
           centerComponent={{}}
-          rightComponent={{ icon: "bell", color: "black", type: "font-awesome 5" }}
+          rightComponent={{ icon: "bell", color: "black", type: "font-awesome" }}
         />
-        <div>
+
           <Avatar
             rounded
             icon={{ name: "user", type: "font-awesome" }}
-          /> <text></text>
-        </div>
+          />
+          <Text> Name </Text>
+  
       </View>
     );
   }

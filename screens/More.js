@@ -39,14 +39,14 @@ export default class More extends Component {
           <SafeAreaView style={styles.container} />
           <View style={styles.container}>
                 <Avatar
-                  size="medium"
+                  size="large"
                   rounded
                   icon={{ name: "user", type: "font-awesome" }}
-                  containerStyle={{ marginLeft: 20, marginTop: 10 }}
+                  containerStyle={{ marginLeft: 20, marginTop: 10,marginBottom: 10 }}
                 />
           </View>
-          <View style={styles.container}>
-            <Text style={styles.textcolor}> Configuration </Text>
+          <View style={styles.container}  >
+            <Text style={styles.textcolor} containerStyle={{marginTop: 10}}> Configuration </Text>
             {list.map((item, i) => (
               <ListItem
                 key={i}

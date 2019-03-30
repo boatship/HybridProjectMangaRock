@@ -20,7 +20,7 @@ export default class More extends Component {
             style: { fontSize: 20, color: "black" }
           }}
           centerComponent={{}}
-          rightComponent={{ icon: "bell", color: "black", type: "font-awesome" }}
+          rightComponent={{ icon: "bell", color: "black", type: "font-awesome 5" }}
         />
         <div>
           <Avatar

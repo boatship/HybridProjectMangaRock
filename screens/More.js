@@ -10,6 +10,7 @@ import {
 import { Header, Avatar, ListItem } from "react-native-elements";
 import MaterialTabs from "react-native-material-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
+
 export default class More extends Component {
   constructor(props) {
     super(props);
@@ -19,6 +20,7 @@ export default class More extends Component {
   render() {
     return (
       <View>
+        <ScrollView>
         <Header
           placement="left"
           backgroundColor="white"
@@ -35,12 +37,14 @@ export default class More extends Component {
         />
         <SafeAreaView style={styles.container} />
         <View>
+          <Flex>
           <Avatar
             size="medium"
             rounded
             icon={{ name: "user", type: "font-awesome" }}
             containerStyle={{ marginLeft: 20, marginTop: 20 }}
           />
+          </Flex>
         </View>
         <View>
           <Text> Configuration </Text>
@@ -72,6 +76,28 @@ export default class More extends Component {
             />
           ))}
         </View>
+        <View>
+          <Text> Support </Text>
+          {list4.map((item, i) => (
+            <ListItem
+              key={i}
+              title={item.title}
+              leftIcon={{ name: item.icon }}
+            />
+          ))}
+        </View>
+        <View>
+          <Text> General </Text>
+          {list5.map((item, i) => (
+            <ListItem
+              key={i}
+              title={item.title}
+              leftIcon={{ name: item.icon }}
+              subtitle={item.subtitle}
+            />
+          ))}
+        </View>
+        </ScrollView>
       </View>
     );
   }
@@ -114,7 +140,17 @@ const list3 = [
 
 const list4 = [
   {
-    title: "Support Center",
-    icon: "backup"
+    title: "Support Center"
   }
+];
+
+const list5 = [
+  {
+    title: "Version",
+    subtitle: '3.8.4_definitive'
+  },
+  {
+    title: "Check for Updates"
+  },
+  {title: "About Us"}
 ];

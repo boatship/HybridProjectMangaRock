@@ -35,8 +35,15 @@ export default class More extends Component {
               color: "black",
               type: "font-awesome"
             }}
+            containerStyle={{
+              elevation: 4,
+              shadowOffset: { width: 5, height: 5 },
+              shadowColor: "grey",
+              shadowOpacity: 0.5,
+              shadowRadius: 10,
+            }}
           />
-          <SafeAreaView style={styles.container} />
+          <SafeAreaView />
           <View style={styles.container}>
                 <Avatar
                   size="large"
@@ -46,7 +53,7 @@ export default class More extends Component {
                 />
           </View>
           <View style={styles.container}  >
-            <Text style={styles.textcolor} containerStyle={{marginTop: 10}}> Configuration </Text>
+            <Text style={styles.textcolor}> Configuration </Text>
             {list.map((item, i) => (
               <ListItem
                 key={i}
@@ -109,6 +116,7 @@ const styles = StyleSheet.create({
     borderColor: '#d6d7da'
   },
   textcolor: {
+    marginTop: 10,
     color: 'gray',
   },
 });

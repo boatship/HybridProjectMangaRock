@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, Image } from 'react-native';
-import { Card, Button, Icon } from 'react-native-elements';
-import { LinearGradient } from 'expo';
-import Ionicons from "react-native-vector-icons/Ionicons";
+import { Card } from 'react-native-elements';
 
 // create a component
 class ReadingList extends Component {
@@ -18,7 +16,7 @@ class ReadingList extends Component {
                 >
                     <View style={{ flex: 1, flexDirection: 'column' }}>
                         <View style={{ flex: 2 }}>
-                            <Text style={{ fontSize: 15 , fontWeight:'bold'}}>Short Tales of Horror</Text>
+                            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>Short Tales of Horror</Text>
                             <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Don't let the briefness of these series fools</Text>
                             <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>you. Strong essences are kept in small bott...</Text>
                             <View style={{ flex: 3, flexDirection: 'row' }}>
@@ -38,7 +36,7 @@ class ReadingList extends Component {
                                         source={require('../../static/Manga/Hanako.webp')}
                                     /></View>
                             </View>
-                            <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 , fontWeight:'bold'}}>VIEW NOW</Text>
+                            <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140, fontWeight: 'bold' }}>VIEW NOW</Text>
 
                         </View>
                     </View>
@@ -55,7 +53,7 @@ class ReadingList extends Component {
                 >
                     <View style={{ flex: 1, flexDirection: 'column' }}>
                         <View style={{ flex: 2 }}>
-                            <Text style={{ fontSize: 15 , fontWeight:'bold'}}>Romantic Series That Will Make You ...</Text>
+                            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>Romantic Series That Will Make You ...</Text>
                             <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Years ago, two lovers have vowed to love</Text>
                             <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>each other for eternity. Even in their next lif...</Text>
                             <View style={{ flex: 3, flexDirection: 'row' }}>
@@ -75,7 +73,7 @@ class ReadingList extends Component {
                                         source={require('../../static/Manga/AJourney.jpg')}
                                     /></View>
                             </View>
-                            <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 , fontWeight:'bold'}}>VIEW NOW</Text>
+                            <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140, fontWeight: 'bold' }}>VIEW NOW</Text>
 
                         </View>
                     </View>
@@ -92,7 +90,7 @@ class ReadingList extends Component {
                 >
                     <View style={{ flex: 1, flexDirection: 'column' }}>
                         <View style={{ flex: 2 }}>
-                            <Text style={{ fontSize: 15 , fontWeight:'bold'}}>Incredible Super Power Series ...</Text>
+                            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>Incredible Super Power Series ...</Text>
                             <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>When you see people on your everyday</Text>
                             <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>commute, you most likely don't pay much a...</Text>
                             <View style={{ flex: 3, flexDirection: 'row' }}>
@@ -112,7 +110,7 @@ class ReadingList extends Component {
                                         source={require('../../static/Manga/VersatileMage.jpg')}
                                     /></View>
                             </View>
-                            <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 , fontWeight:'bold'}}>VIEW NOW</Text>
+                            <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140, fontWeight: 'bold' }}>VIEW NOW</Text>
 
                         </View>
                     </View>

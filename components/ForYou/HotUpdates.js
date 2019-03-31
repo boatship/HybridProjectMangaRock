@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, Image } from 'react-native';
-import { Card, Button, Icon } from 'react-native-elements';
-import { LinearGradient } from 'expo';
+import { View, Text, ScrollView } from 'react-native';
+import { Card } from 'react-native-elements';
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 // create a component

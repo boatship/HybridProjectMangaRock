@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, Image } from 'react-native';
-import { Card, Button, Icon } from 'react-native-elements';
-import { LinearGradient } from 'expo';
-import Ionicons from "react-native-vector-icons/Ionicons";
+import { ScrollView } from 'react-native';
+import { Card } from 'react-native-elements';
+
 
 class artwork extends Component {
     render() {

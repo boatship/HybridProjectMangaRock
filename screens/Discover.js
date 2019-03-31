@@ -1,7 +1,5 @@
-import React, { Component } from "react";
-import { View, Text, SafeAreaView, StyleSheet, ScrollView } from "react-native";
-import { Header } from "react-native-elements";
-import MaterialTabs from "react-native-material-tabs";
+import React from "react";
+import { View, StyleSheet } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 import {

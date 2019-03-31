@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, Image } from 'react-native';
-import { Card, Button, Icon } from 'react-native-elements';
+import { Card } from 'react-native-elements';
 import { LinearGradient } from 'expo';
 import Ionicons from "react-native-vector-icons/Ionicons";
 
@@ -29,11 +29,11 @@ class FeatureTitles extends Component {
                                     source={require('../../static/Manga/resentment.webp')}
                                 />
                                 <View style={{ borderTopColor: '#8D7593', borderTopWidth: 0.5, width: 275 }}>
-                                    <Text style={{ color: 'white', marginTop: 5 , fontWeight:'bold'}}>READ NOW</Text>
+                                    <Text style={{ color: 'white', marginTop: 5, fontWeight: 'bold' }}>READ NOW</Text>
                                 </View>
                             </View>
                             <View style={{ flex: 2.5, marginLeft: 10 }}>
-                                <Text style={{ marginTop: 20, marginBottom: 10, color: 'white' , fontWeight:'bold' , fontSize: 15}}>
+                                <Text style={{ marginTop: 20, marginBottom: 10, color: 'white', fontWeight: 'bold', fontSize: 15 }}>
                                     Resentment
                                 </Text>
                                 <Text style={{ color: '#CFCFCF', fontSize: 12 }}>
@@ -86,11 +86,11 @@ class FeatureTitles extends Component {
                                     source={require('../../static/Manga/samuraisho.jpg')}
                                 />
                                 <View style={{ borderTopColor: '#90813C', borderTopWidth: 0.25, width: 275 }}>
-                                    <Text style={{ color: 'white', marginTop: 5 , fontWeight:'bold'}}>READ NOW</Text>
+                                    <Text style={{ color: 'white', marginTop: 5, fontWeight: 'bold' }}>READ NOW</Text>
                                 </View>
                             </View>
                             <View style={{ flex: 2.5, marginLeft: 10 }}>
-                                <Text style={{ marginTop: 20, marginBottom: 10, color: 'white' , fontWeight:'bold', fontSize: 15}}>
+                                <Text style={{ marginTop: 20, marginBottom: 10, color: 'white', fontWeight: 'bold', fontSize: 15 }}>
                                     Samurai Shodown (Yuuki Miyoshi)
                                 </Text>
                                 <Text style={{ color: '#CFCFCF', fontSize: 12 }}>
@@ -143,11 +143,11 @@ class FeatureTitles extends Component {
                                     source={require('../../static/Manga/segregated.png')}
                                 />
                                 <View style={{ borderTopColor: '#A3A3A3', borderTopWidth: 0.25, width: 275 }}>
-                                    <Text style={{ color: 'white', marginTop: 5 , fontWeight:'bold'}}>READ NOW</Text>
+                                    <Text style={{ color: 'white', marginTop: 5, fontWeight: 'bold' }}>READ NOW</Text>
                                 </View>
                             </View>
                             <View style={{ flex: 2.5, marginLeft: 10 }}>
-                                <Text style={{ marginTop: 20, marginBottom: 10, color: 'white' , fontWeight:'bold', fontSize: 15}}>
+                                <Text style={{ marginTop: 20, marginBottom: 10, color: 'white', fontWeight: 'bold', fontSize: 15 }}>
                                     Segregated World
                                 </Text>
                                 <Text style={{ color: '#CFCFCF', fontSize: 12 }}>

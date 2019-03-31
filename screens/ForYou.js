@@ -3,6 +3,24 @@ import { View, Text, ScrollView, Image } from 'react-native';
 import { Card, Button, Icon } from 'react-native-elements';
 import { LinearGradient } from 'expo';
 import Ionicons from "react-native-vector-icons/Ionicons";
+import FeatureTitles from "../components/ForYou/FeatureTitles";
+import FeatureCollections from "../components/ForYou/FeatureCollections";
+import HotUpdates from "../components/ForYou/HotUpdates";
+import ReadingList from "../components/ForYou/ReadingList";
+import BeingRead from "../components/ForYou/BeingRead";
+import Recommended from '../components/ForYou/Recommended';
+import EditorsPicks from '../components/ForYou/EditorsPicks';
+import FeaturedAuthors from '../components/ForYou/FeaturedAuthors'
+import Popular from '../components/ForYou/Popular';
+import Genres from '../components/ForYou/Genres';
+import BecauseYouRead1 from '../components/ForYou/BecauseYouRead1';
+import BecauseYouRead2 from '../components/ForYou/BecauseYouRead2';
+import BecauseYouRead3 from '../components/ForYou/BecauseYouRead3';
+import MAArtworks from '../components/ForYou/MAArtworks';
+import Artwork from '../components/ForYou/Artwork';
+import Indie from '../components/ForYou/Indie';
+import DidYouKnow from '../components/ForYou/DidYouKnow';
+
 
 export default class ForYou extends Component {
   constructor(props) {
@@ -15,532 +33,68 @@ export default class ForYou extends Component {
     return (
       <View>
         <ScrollView>
-          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: 'orange' }}>Feature titles</Text>
-          <Text style={{ marginLeft: 20 }}>Top Picks For You</Text>
-          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>Feature titles</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Top Picks For You</Text>
+          <FeatureTitles/>
 
-            <Card
-              containerStyle={{
-                height: 325,
-                width: 300,
-                marginRight: -5,
-                backgroundColor: '#635167'
-              }}
-              image={require('../static/resentment-2.jpg')}>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>Feature collections</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Top Picks For You</Text>
+          <FeatureCollections/>
 
-              <View style={{ flex: 1 }}>
+          <Text style={{ marginLeft: 20 , marginTop: 20, fontSize: 15, fontWeight:'bold' }}>Hot Updates</Text>
+          <HotUpdates/>           
 
-                <View style={{ flex: 1, flexDirection: 'row' }}>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>Updated daily</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Reading List</Text>
+          <ReadingList/>
 
-                  <View style={{ flex: 1 }}>
+          <Text style={{ marginLeft: 20 , marginTop: 20, fontSize: 15, fontWeight:'bold' }}>Being Read Right Now                                    <Text style={{color: '#45B4FF', fontWeight:'bold'}}>VIEW ALL</Text></Text>
+          <BeingRead/>
 
-                    <Image
-                      style={{ width: 75, height: 115, marginBottom: 10, }}
-                      source={require('../static/resentment.webp')}
-                    />
-                    <View style={{ borderTopColor: '#8D7593', borderTopWidth: 0.5, width: 275 }}>
-                      <Text style={{ color: 'white', marginTop: 5 }}>READ NOW</Text>
-                    </View>
-                  </View>
-                  <View style={{ flex: 2.5, marginLeft: 10 }}>
-                    <Text style={{ marginTop: 20, marginBottom: 10, color: 'white' }}>
-                      Resentment
-                  </Text>
-                    <Text style={{ color: '#CFCFCF', fontSize: 12 }}>
-                      Horror,Drama,Supernatural
-                  </Text>
-                    <Text style={{ color: '#CFCFCF', fontSize: 12 }}>
-                      Ongoing · 6 chapters
-                  </Text>
-                    <Ionicons
-                      name="md-heart-empty"
-                      size={20}
-                      color="white"
-                      style={{ marginLeft: 145, marginTop: 42.5 }}
-                    />
-                    <Ionicons
-                      name="md-more"
-                      size={20}
-                      color="white"
-                      style={{ marginTop: -20, marginLeft: 185 }}
-                    />
-                  </View>
+          <Text style={{ marginLeft: 20 , marginTop: 20, fontSize: 15, fontWeight:'bold' }}>Recommended For You                                 <Text style={{color: '#45B4FF', fontWeight:'bold'}}>VIEW ALL</Text></Text>
+          <Recommended/>
 
-                </View>
-              </View>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>Updated weekly</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Editors' Picks</Text>
+          <EditorsPicks/>
 
-              <LinearGradient
-                style={{ position: 'absolute', top: -50, bottom: 0, width: '107.125%', height: 50 }}
-                colors={['rgba(99, 81, 103, 0.1)', 'rgba(99, 81, 103, 1)']}
-                pointerEvents={'none'}
-              />
-            </Card>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>Manga we love</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Featured Authors</Text>
+          <FeaturedAuthors/>
 
-            <Card
-              containerStyle={{
-                height: 325,
-                width: 300,
-                marginRight: -5,
-                backgroundColor: '#685D2A'
-              }}
-              image={require('../static/samuraisho-2.jpg')}>
+          <Text style={{ marginLeft: 20 , marginTop: 20, fontSize: 15, fontWeight:'bold' }}>Popular This Week                                         <Text style={{color: '#45B4FF', fontWeight:'bold'}}>VIEW ALL</Text></Text>
+          <Popular/>
 
-              <View style={{ flex: 1 }}>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>Must-read titles</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Best By Genres</Text>
+          <Genres/>
 
-                <View style={{ flex: 1, flexDirection: 'row' }}>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>Because you read</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>X - Epoch of the Dragon                                 <Text style={{color: '#45B4FF', fontWeight:'bold'}}>VIEW ALL</Text></Text>
+          <BecauseYouRead1/>
 
-                  <View style={{ flex: 1 }}>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>Because you read</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Level 1 With S-rank Drop Rate Is The ...    <Text style={{color: '#45B4FF', fontWeight:'bold'}}>VIEW ALL</Text></Text>
+          <BecauseYouRead2/>
 
-                    <Image
-                      style={{ width: 75, height: 115, marginBottom: 10, }}
-                      source={require('../static/samuraisho.jpg')}
-                    />
-                    <View style={{ borderTopColor: '#90813C', borderTopWidth: 0.25, width: 275 }}>
-                      <Text style={{ color: 'white', marginTop: 5 }}>READ NOW</Text>
-                    </View>
-                  </View>
-                  <View style={{ flex: 2.5, marginLeft: 10 }}>
-                    <Text style={{ marginTop: 20, marginBottom: 10, color: 'white' }}>
-                      Samurai Shodown (Yuuki Miyoshi)
-                  </Text>
-                    <Text style={{ color: '#CFCFCF', fontSize: 12 }}>
-                      Historical, Martial Arts, Supernatu...
-                  </Text>
-                    <Text style={{ color: '#CFCFCF', fontSize: 12 }}>
-                      Completed · 6 chapters
-                  </Text>
-                    <Ionicons
-                      name="md-heart-empty"
-                      size={20}
-                      color="white"
-                      style={{ marginLeft: 145, marginTop: 42.5 }}
-                    />
-                    <Ionicons
-                      name="md-more"
-                      size={20}
-                      color="white"
-                      style={{ marginTop: -20, marginLeft: 185 }}
-                    />
-                  </View>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>Because you read</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Ascendance of a Bookworm                        <Text style={{color: '#45B4FF', fontWeight:'bold'}}>VIEW ALL</Text></Text>
+          <BecauseYouRead3/>
 
-                </View>
-              </View>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>Hand-picked collections by manga rock</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Manga & Anime Artworks</Text>
+          <MAArtworks/>
 
-              <LinearGradient
-                style={{ position: 'absolute', top: -50, bottom: 0, width: '107.125%', height: 50 }}
-                colors={['rgba(104, 93, 42, 0.1)', 'rgba(104, 93, 42, 1)']}
-                pointerEvents={'none'}
-              />
-            </Card>
+          <Artwork/>
 
-            <Card
-              containerStyle={{
-                height: 325,
-                width: 300,
-                marginRight: -5,
-                backgroundColor: '#3A3A3A'
-              }}
-              image={require('../static/segregated-2.jpg')}>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>From indie creators</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Original Titles On Manga Rock</Text>
+          <Indie/>
 
-              <View style={{ flex: 1 }}>
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: '#FF5733' }}>App features & functions</Text>
+          <Text style={{ marginLeft: 20, fontSize: 15, fontWeight:'bold' }}>Did You Know ?</Text>
+          <DidYouKnow/>
 
-                <View style={{ flex: 1, flexDirection: 'row' }}>
-
-                  <View style={{ flex: 1 }}>
-
-                    <Image
-                      style={{ width: 75, height: 115, marginBottom: 10, }}
-                      source={require('../static/segregated.png')}
-                    />
-                    <View style={{ borderTopColor: '#A3A3A3', borderTopWidth: 0.25, width: 275 }}>
-                      <Text style={{ color: 'white', marginTop: 5 }}>READ NOW</Text>
-                    </View>
-                  </View>
-                  <View style={{ flex: 2.5, marginLeft: 10 }}>
-                    <Text style={{ marginTop: 20, marginBottom: 10, color: 'white' }}>
-                      Segregated World
-                  </Text>
-                    <Text style={{ color: '#CFCFCF', fontSize: 12 }}>
-                      Fantasy, Adventure, Action
-                  </Text>
-                    <Text style={{ color: '#CFCFCF', fontSize: 12 }}>
-                      Ongoing · 4 chapters
-                  </Text>
-                    <Ionicons
-                      name="md-heart-empty"
-                      size={20}
-                      color="white"
-                      style={{ marginLeft: 145, marginTop: 42.5 }}
-                    />
-                    <Ionicons
-                      name="md-more"
-                      size={20}
-                      color="white"
-                      style={{ marginTop: -20, marginLeft: 185 }}
-                    />
-                  </View>
-
-                </View>
-              </View>
-
-              <LinearGradient
-                style={{ position: 'absolute', top: -50, bottom: 0, width: '107.125%', height: 50 }}
-                colors={['rgba(58, 58, 58, 0.1)', 'rgba(58, 58, 58, 1)']}
-                pointerEvents={'none'}
-              />
-            </Card>
-
-
-
-          </ScrollView>
-
-          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: 'orange' }}>Feature collections</Text>
-          <Text style={{ marginLeft: 20 }}>Top Picks For You</Text>
-          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-          <Card
-            containerStyle={{
-              height: 240,
-              width: 300,
-              marginRight: -5,
-            }}
-          >
-            <View style={{ flex: 1, flexDirection: 'column' }}>
-              <View style={{ flex: 2 }}>
-                <Text style={{ fontSize: 15 }}>Short and Humorous Manga to Read ...</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Read these sgort and entertaining stories</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>to rewind before bedtime. Each chapter is ...</Text>
-                <View style={{ flex: 3, flexDirection: 'row' }}>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/GagMangaBiyori.webp')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/Mako-sanToHachisuka-kun.webp')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/TheDragonNextDoor.webp')}
-                    /></View>
-                </View>
-                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>CHECK IT OUT</Text>
-
-              </View>
-            </View>
-
-
-          </Card>
-
-          <Card
-            containerStyle={{
-              height: 240,
-              width: 300,
-              marginRight: -5,
-            }}
-          >
-            <View style={{ flex: 1, flexDirection: 'column' }}>
-              <View style={{ flex: 2 }}>
-                <Text style={{ fontSize: 15 }}>Mafia Gangs That will Blow Your Mind</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Mafia are known to have an array of</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>weapons, scary and tough gangs, and a ma...</Text>
-                <View style={{ flex: 3, flexDirection: 'row' }}>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/baccano.jpg')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/BananaFish.jpg')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/BloodyMonday.jpg')}
-                    /></View>
-                </View>
-                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>CHECK IT OUT</Text>
-
-              </View>
-            </View>
-
-
-          </Card>
-
-          <Card
-            containerStyle={{
-              height: 240,
-              width: 300,
-              marginRight: -5,
-            }}
-          >
-            <View style={{ flex: 1, flexDirection: 'column' }}>
-              <View style={{ flex: 2 }}>
-                <Text style={{ fontSize: 15 }}>Action-Packed Ninja Series You Must ...</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Are you interested in ninjas and wanted to</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>read manga about them? Then this is the r...</Text>
-                <View style={{ flex: 3, flexDirection: 'row' }}>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/Basilisk.webp')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/BeHeun.webp')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/DontenzNiWarau.webp')}
-                    /></View>
-                </View>
-                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>CHECK IT OUT</Text>
-
-              </View>
-            </View>
-          </Card>
-          </ScrollView>
-
-          <Text style={{ marginLeft: 20 , marginTop: 20 }}>Hot Updates</Text>
-
-            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-          <Card
-            containerStyle={{
-              height: 220,
-              width: 100,
-              marginRight: -5,
-            }}
-            image={require('../static/LegendOfPhoenix.webp')}>
-            <View style={{ flex: 1}}>
-            <View style={{flex:2}}>
-              <Text>Legend of Phoenix</Text>
-              <Text style={{ color: '#7A7A7A', fontSize: 12 }}>5 Days ago</Text>
-            </View>
-            <View style={{flex:1}}>
-            <Ionicons
-                      name="md-more"
-                      size={20}
-                      color="#7A7A7A"
-                      style={{marginLeft:75}}
-                    />
-            </View>
-            </View>
-          </Card>
-
-          <Card
-            containerStyle={{
-              height: 220,
-              width: 100,
-              marginRight: -5,
-            }}
-            image={require('../static/GentlemanDevil.jpg')}>
-            <View style={{ flex: 1}}>
-            <View style={{flex:2}}>
-              <Text>Gentleman Devil</Text>
-              <Text style={{ color: '#7A7A7A', fontSize: 12 }}>yesterday</Text>
-            </View>
-            <View style={{flex:1}}>
-            <Ionicons
-                      name="md-more"
-                      size={20}
-                      color="#7A7A7A"
-                      style={{marginLeft:75}}
-                    />
-            </View>
-            </View>
-          </Card>
-
-          <Card
-            containerStyle={{
-              height: 220,
-              width: 100,
-              marginRight: -5,
-            }}
-            image={require('../static/HinowaGaYuku.jpg')}
-            >
-            <View style={{ flex: 1}}>
-            <View style={{flex:2}}>
-              <Text>Hinowa ga Yuku</Text>
-              <Text style={{ color: '#7A7A7A', fontSize: 12 }}>4 Days ago</Text>
-            </View>
-            <View style={{flex:1}}>
-            <Ionicons
-                      name="md-more"
-                      size={20}
-                      color="#7A7A7A"
-                      style={{marginLeft:75}}
-                    />
-            </View>
-            </View>
-          </Card>
-
-          <Card
-            containerStyle={{
-              height: 220,
-              width: 100,
-              marginRight: -5,
-            }}
-            image={require('../static/TalesOfDemonsAndGods.jpg')}>
-            <View style={{ flex: 1}}>
-            <View style={{flex:2}}>
-              <Text>Tales of Demons a...</Text>
-              <Text style={{ color: '#7A7A7A', fontSize: 12 }}>2 Days ago</Text>
-            </View>
-            <View style={{flex:1}}>
-            <Ionicons
-                      name="md-more"
-                      size={20}
-                      color="#7A7A7A"
-                      style={{marginLeft:75}}
-                    />
-            </View>
-            </View>
-          </Card>
-
-          <Card
-            containerStyle={{
-              height: 220,
-              width: 100,
-              marginRight: -5,
-            }}
-            image={require('../static/TheLastHuman.jpg')}>
-            <View style={{ flex: 1}}>
-            <View style={{flex:2}}>
-              <Text>The Last Human</Text>
-              <Text style={{ color: '#7A7A7A', fontSize: 12 }}>today</Text>
-            </View>
-            <View style={{flex:1}}>
-            <Ionicons
-                      name="md-more"
-                      size={20}
-                      color="#7A7A7A"
-                      style={{marginLeft:75}}
-                    />
-            </View>
-            </View>
-          </Card>
-
-          </ScrollView>
-
-          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: 'orange' }}>Updated daily</Text>
-          <Text style={{ marginLeft: 20 }}>Reading List</Text>
-
-          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-          <Card
-            containerStyle={{
-              height: 240,
-              width: 300,
-              marginRight: -5,
-            }}
-          >
-            <View style={{ flex: 1, flexDirection: 'column' }}>
-              <View style={{ flex: 2 }}>
-                <Text style={{ fontSize: 15 }}>Short Tales of Horror</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Don't let the briefness of these series fools</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>you. Strong essences are kept in small bott...</Text>
-                <View style={{ flex: 3, flexDirection: 'row' }}>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/UgetsuMonogatari.webp')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/KyoukotsuNoYume.jpg')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/Hanako.webp')}
-                    /></View>
-                </View>
-                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>VIEW NOW</Text>
-
-              </View>
-            </View>
-
-
-          </Card>
-
-          <Card
-            containerStyle={{
-              height: 240,
-              width: 300,
-              marginRight: -5,
-            }}
-          >
-            <View style={{ flex: 1, flexDirection: 'column' }}>
-              <View style={{ flex: 2 }}>
-                <Text style={{ fontSize: 15 }}>Romantic Series That Will Make You ...</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Years ago, two lovers have vowed to love</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>each other for eternity. Even in their next lif...</Text>
-                <View style={{ flex: 3, flexDirection: 'row' }}>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/TimeLover.png')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/PhoenixNirvana.jpg')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/AJourney.jpg')}
-                    /></View>
-                </View>
-                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>VIEW NOW</Text>
-
-              </View>
-            </View>
-
-
-          </Card>
-
-          <Card
-            containerStyle={{
-              height: 240,
-              width: 300,
-              marginRight: -5,
-            }}
-          >
-            <View style={{ flex: 1, flexDirection: 'column' }}>
-              <View style={{ flex: 2 }}>
-                <Text style={{ fontSize: 15 }}>Incredible Super Power Series That W...</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>When you see people on your everyday</Text>
-                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>commute, you most likely don't pay much a...</Text>
-                <View style={{ flex: 3, flexDirection: 'row' }}>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/CultivationChatGroup.jpg')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/SchoolBeauty.png')}
-                    /></View>
-                  <View style={{ flex: 1, flexDirection: 'column' }}>
-                    <Image
-                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
-                      source={require('../static/VersatileMage.jpg')}
-                    /></View>
-                </View>
-                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>VIEW NOW</Text>
-
-              </View>
-            </View>
-          </Card>
-          </ScrollView>
         </ScrollView>
       </View>
     );

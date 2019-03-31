@@ -308,7 +308,8 @@ export default class ForYou extends Component {
           </ScrollView>
 
           <Text style={{ marginLeft: 20 , marginTop: 20 }}>Hot Updates</Text>
-            <ScrollView>
+
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <Card
             containerStyle={{
               height: 220,
@@ -329,6 +330,214 @@ export default class ForYou extends Component {
                       style={{marginLeft:75}}
                     />
             </View>
+            </View>
+          </Card>
+
+          <Card
+            containerStyle={{
+              height: 220,
+              width: 100,
+              marginRight: -5,
+            }}
+            image={require('../static/GentlemanDevil.jpg')}>
+            <View style={{ flex: 1}}>
+            <View style={{flex:2}}>
+              <Text>Gentleman Devil</Text>
+              <Text style={{ color: '#7A7A7A', fontSize: 12 }}>yesterday</Text>
+            </View>
+            <View style={{flex:1}}>
+            <Ionicons
+                      name="md-more"
+                      size={20}
+                      color="#7A7A7A"
+                      style={{marginLeft:75}}
+                    />
+            </View>
+            </View>
+          </Card>
+
+          <Card
+            containerStyle={{
+              height: 220,
+              width: 100,
+              marginRight: -5,
+            }}
+            image={require('../static/HinowaGaYuku.jpg')}
+            >
+            <View style={{ flex: 1}}>
+            <View style={{flex:2}}>
+              <Text>Hinowa ga Yuku</Text>
+              <Text style={{ color: '#7A7A7A', fontSize: 12 }}>4 Days ago</Text>
+            </View>
+            <View style={{flex:1}}>
+            <Ionicons
+                      name="md-more"
+                      size={20}
+                      color="#7A7A7A"
+                      style={{marginLeft:75}}
+                    />
+            </View>
+            </View>
+          </Card>
+
+          <Card
+            containerStyle={{
+              height: 220,
+              width: 100,
+              marginRight: -5,
+            }}
+            image={require('../static/TalesOfDemonsAndGods.jpg')}>
+            <View style={{ flex: 1}}>
+            <View style={{flex:2}}>
+              <Text>Tales of Demons a...</Text>
+              <Text style={{ color: '#7A7A7A', fontSize: 12 }}>2 Days ago</Text>
+            </View>
+            <View style={{flex:1}}>
+            <Ionicons
+                      name="md-more"
+                      size={20}
+                      color="#7A7A7A"
+                      style={{marginLeft:75}}
+                    />
+            </View>
+            </View>
+          </Card>
+
+          <Card
+            containerStyle={{
+              height: 220,
+              width: 100,
+              marginRight: -5,
+            }}
+            image={require('../static/TheLastHuman.jpg')}>
+            <View style={{ flex: 1}}>
+            <View style={{flex:2}}>
+              <Text>The Last Human</Text>
+              <Text style={{ color: '#7A7A7A', fontSize: 12 }}>today</Text>
+            </View>
+            <View style={{flex:1}}>
+            <Ionicons
+                      name="md-more"
+                      size={20}
+                      color="#7A7A7A"
+                      style={{marginLeft:75}}
+                    />
+            </View>
+            </View>
+          </Card>
+
+          </ScrollView>
+
+          <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: 'orange' }}>Updated daily</Text>
+          <Text style={{ marginLeft: 20 }}>Reading List</Text>
+
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <Card
+            containerStyle={{
+              height: 240,
+              width: 300,
+              marginRight: -5,
+            }}
+          >
+            <View style={{ flex: 1, flexDirection: 'column' }}>
+              <View style={{ flex: 2 }}>
+                <Text style={{ fontSize: 15 }}>Short Tales of Horror</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Don't let the briefness of these series fools</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>you. Strong essences are kept in small bott...</Text>
+                <View style={{ flex: 3, flexDirection: 'row' }}>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/UgetsuMonogatari.webp')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/KyoukotsuNoYume.jpg')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/Hanako.webp')}
+                    /></View>
+                </View>
+                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>VIEW NOW</Text>
+
+              </View>
+            </View>
+
+
+          </Card>
+
+          <Card
+            containerStyle={{
+              height: 240,
+              width: 300,
+              marginRight: -5,
+            }}
+          >
+            <View style={{ flex: 1, flexDirection: 'column' }}>
+              <View style={{ flex: 2 }}>
+                <Text style={{ fontSize: 15 }}>Romantic Series That Will Make You ...</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Years ago, two lovers have vowed to love</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>each other for eternity. Even in their next lif...</Text>
+                <View style={{ flex: 3, flexDirection: 'row' }}>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/TimeLover.png')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/PhoenixNirvana.jpg')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/AJourney.jpg')}
+                    /></View>
+                </View>
+                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>VIEW NOW</Text>
+
+              </View>
+            </View>
+
+
+          </Card>
+
+          <Card
+            containerStyle={{
+              height: 240,
+              width: 300,
+              marginRight: -5,
+            }}
+          >
+            <View style={{ flex: 1, flexDirection: 'column' }}>
+              <View style={{ flex: 2 }}>
+                <Text style={{ fontSize: 15 }}>Incredible Super Power Series That W...</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>When you see people on your everyday</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>commute, you most likely don't pay much a...</Text>
+                <View style={{ flex: 3, flexDirection: 'row' }}>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/CultivationChatGroup.jpg')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/SchoolBeauty.png')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/VersatileMage.jpg')}
+                    /></View>
+                </View>
+                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>VIEW NOW</Text>
+
+              </View>
             </View>
           </Card>
           </ScrollView>

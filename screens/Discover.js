@@ -50,20 +50,21 @@ const Discover = createStackNavigator({
         borderBottomColor: "transparent",
         borderBottomWidth: 0,
         shadowColor: "transparent",
-        elevation: 0
+        elevation: 0,
+        fontWeight: 'normal',
       },
       headerTintColor: "black",
-      title: "Manga Rock",
-      headerLeft: (
-        <View>
-          <Ionicons
-            name="md-arrow-dropdown"
-            size={20}
-            color="black"
-            style={{ marginLeft: 200 }}
-          />
-        </View>
-      ),
+      title: "Manga Rock ▾",
+      // headerLeft: (
+      //   <View>
+      //     <Ionicons
+      //       name="md-arrow-dropdown"
+      //       size={20}
+      //       color="black"
+      //       style={{ marginLeft: 200 }}
+      //     />
+      //   </View>
+      // ),
       headerRight: (
         <View>
           <Ionicons

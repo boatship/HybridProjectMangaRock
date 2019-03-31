@@ -190,11 +190,148 @@ export default class ForYou extends Component {
               />
             </Card>
 
+
+
           </ScrollView>
 
           <Text style={{ marginLeft: 20, marginTop: 20, fontSize: 10, color: 'orange' }}>Feature collections</Text>
           <Text style={{ marginLeft: 20 }}>Top Picks For You</Text>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <Card
+            containerStyle={{
+              height: 240,
+              width: 300,
+              marginRight: -5,
+            }}
+          >
+            <View style={{ flex: 1, flexDirection: 'column' }}>
+              <View style={{ flex: 2 }}>
+                <Text style={{ fontSize: 15 }}>Short and Humorous Manga to Read ...</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Read these sgort and entertaining stories</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>to rewind before bedtime. Each chapter is ...</Text>
+                <View style={{ flex: 3, flexDirection: 'row' }}>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/GagMangaBiyori.webp')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/Mako-sanToHachisuka-kun.webp')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/TheDragonNextDoor.webp')}
+                    /></View>
+                </View>
+                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>CHECK IT OUT</Text>
 
+              </View>
+            </View>
+
+
+          </Card>
+
+          <Card
+            containerStyle={{
+              height: 240,
+              width: 300,
+              marginRight: -5,
+            }}
+          >
+            <View style={{ flex: 1, flexDirection: 'column' }}>
+              <View style={{ flex: 2 }}>
+                <Text style={{ fontSize: 15 }}>Mafia Gangs That will Blow Your Mind</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Mafia are known to have an array of</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>weapons, scary and tough gangs, and a ma...</Text>
+                <View style={{ flex: 3, flexDirection: 'row' }}>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/baccano.jpg')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/BananaFish.jpg')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/BloodyMonday.jpg')}
+                    /></View>
+                </View>
+                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>CHECK IT OUT</Text>
+
+              </View>
+            </View>
+
+
+          </Card>
+
+          <Card
+            containerStyle={{
+              height: 240,
+              width: 300,
+              marginRight: -5,
+            }}
+          >
+            <View style={{ flex: 1, flexDirection: 'column' }}>
+              <View style={{ flex: 2 }}>
+                <Text style={{ fontSize: 15 }}>Action-Packed Ninja Series You Must ...</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>Are you interested in ninjas and wanted to</Text>
+                <Text style={{ color: '#7A7A7A', fontSize: 13.25 }}>read manga about them? Then this is the r...</Text>
+                <View style={{ flex: 3, flexDirection: 'row' }}>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/Basilisk.webp')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/BeHeun.webp')}
+                    /></View>
+                  <View style={{ flex: 1, flexDirection: 'column' }}>
+                    <Image
+                      style={{ width: 80, height: 120, marginTop: 10, marginRight: 10 }}
+                      source={require('../static/DontenzNiWarau.webp')}
+                    /></View>
+                </View>
+                <Text style={{ textAlign: 'center', color: '#45B4FF', marginTop: 140 }}>CHECK IT OUT</Text>
+
+              </View>
+            </View>
+          </Card>
+          </ScrollView>
+
+          <Text style={{ marginLeft: 20 , marginTop: 20 }}>Hot Updates</Text>
+            <ScrollView>
+          <Card
+            containerStyle={{
+              height: 220,
+              width: 100,
+              marginRight: -5,
+            }}
+            image={require('../static/LegendOfPhoenix.webp')}>
+            <View style={{ flex: 1}}>
+            <View style={{flex:2}}>
+              <Text>Legend of Phoenix</Text>
+              <Text style={{ color: '#7A7A7A', fontSize: 12 }}>5 Days ago</Text>
+            </View>
+            <View style={{flex:1}}>
+            <Ionicons
+                      name="md-more"
+                      size={20}
+                      color="#7A7A7A"
+                      style={{marginLeft:75}}
+                    />
+            </View>
+            </View>
+          </Card>
+          </ScrollView>
         </ScrollView>
       </View>
     );

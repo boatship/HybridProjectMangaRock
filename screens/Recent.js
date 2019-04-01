@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, SafeAreaView, StyleSheet, ScrollView } from 'react-native';
 import { Header } from 'react-native-elements';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Recent2 from '../components/Recent/Recent'
 
 export default class Recent extends Component {
   constructor(props) {
@@ -27,7 +28,12 @@ export default class Recent extends Component {
             shadowRadius: 10,
           }}
         />
+        <ScrollView>
+          <Recent2/>
+        </ScrollView>
+        
       </View>
+      
     );
   }
 }

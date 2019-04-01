@@ -6,7 +6,8 @@ import {
   StyleSheet,
   ScrollView,
   List,
-  Flex
+  Flex,
+  onPress
 } from "react-native";
 import { Header, Avatar, ListItem } from "react-native-elements";
 import MaterialTabs from "react-native-material-tabs";
@@ -40,19 +41,43 @@ export default class More extends Component {
               shadowOffset: { width: 5, height: 5 },
               shadowColor: "grey",
               shadowOpacity: 0.5,
-              shadowRadius: 10,
+              shadowRadius: 10
             }}
           />
           <SafeAreaView />
           <View style={styles.container}>
-                <Avatar
-                  size="large"
-                  rounded
-                  icon={{ name: "user", type: "font-awesome" }}
-                  containerStyle={{ marginLeft: 20, marginTop: 10,marginBottom: 10 }}
-                />
+            <View>
+              <ListItem
+                title={<Text>chanin.t@mail.com</Text>}
+                leftElement={
+                  <Avatar
+                    size="medium"
+                    rounded
+                    icon={{ name: "user", type: "font-awesome" }}
+                    containerStyle={{
+                      marginLeft:3 ,
+                      marginTop: 5,
+                      marginBottom: 5
+                    }}
+                  />
+                }
+                rightElement={
+                  <Text style={{ color: "#45B4FF", fontWeight: "bold" }}>
+                    View
+                  </Text>
+                }
+                containerStyle={{
+                  //marginBottom:,
+                  borderRadius: 1,
+                  borderWidth: 0.5,
+                  borderColor: "#d6d7da"
+                }}
+                subtitle={
+                  <Text>Chanin.T</Text>}
+              />
+            </View>
           </View>
-          <View style={styles.container}  >
+          <View style={styles.container}>
             <Text style={styles.textcolor}> Configuration </Text>
             {list.map((item, i) => (
               <ListItem
@@ -113,22 +138,31 @@ const styles = StyleSheet.create({
   container: {
     borderRadius: 4,
     borderWidth: 0.5,
-    borderColor: '#d6d7da'
+    borderColor: "#d6d7da"
+  },
+  containerFlex: {
+    flex: 1,
+    flexDirection: "column",
+    borderRadius: 4,
+    borderWidth: 0.5,
+    borderColor: "#d6d7da"
   },
   textcolor: {
     marginTop: 10,
-    color: 'gray',
-  },
+    color: "gray"
+  }
 });
 
 const list = [
   {
     title: "Backup & Restore",
-    icon: "backup"
+    icon: "backup",
+    onPress
   },
   {
     title: "Advance Setting",
-    icon: "settings"
+    icon: "settings",
+    onPress
   },
   {
     title: "Language",

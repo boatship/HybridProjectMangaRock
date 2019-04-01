@@ -19,6 +19,10 @@ export default class More extends Component {
     this.state = {};
   }
 
+  static navigationOptions = {
+    header: null
+  };
+
   render() {
     return (
       <View>
@@ -49,6 +53,7 @@ export default class More extends Component {
             <View>
               <ListItem
                 title={<Text>chanin.t@mail.com</Text>}
+                
                 leftElement={
                   <Avatar
                     size="medium"
@@ -62,8 +67,8 @@ export default class More extends Component {
                   />
                 }
                 rightElement={
-                  <Text style={{ color: "#45B4FF", fontWeight: "bold" }}>
-                    View
+                  <Text style={{ color: "#45B4FF", fontWeight: "bold" }} onPress={() => this.props.navigation.navigate('ManageAccount')}> 
+                    MANAGE
                   </Text>
                 }
                 containerStyle={{
@@ -84,6 +89,7 @@ export default class More extends Component {
                 key={i}
                 title={item.title}
                 leftIcon={{ name: item.icon }}
+                onPress={() => this.props.navigation.navigate(item.onPress)}
               />
             ))}
           </View>
@@ -104,6 +110,7 @@ export default class More extends Component {
                 key={i}
                 title={item.title}
                 leftIcon={{ name: item.icon }}
+                onPress={() => this.props.navigation.navigate(item.onPress)}
               />
             ))}
           </View>
@@ -157,16 +164,17 @@ const list = [
   {
     title: "Backup & Restore",
     icon: "backup",
-    onPress
+    onPress: 'BackUpRestore'
   },
   {
     title: "Advance Setting",
     icon: "settings",
-    onPress
+    onPress: 'AdvanceSetting'
   },
   {
     title: "Language",
-    icon: "language"
+    icon: "language",
+    onPress: 'Language'
   }
 ];
 
@@ -180,7 +188,8 @@ const list2 = [
 const list3 = [
   {
     title: "Artworks",
-    icon: "backup"
+    icon: "backup",
+    onPress: 'Artwork'
   }
 ];
 

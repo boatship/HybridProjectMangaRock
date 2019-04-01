@@ -7,6 +7,11 @@ import Favorites from '../screens/Favorites';
 import Recent from '../screens/Recent';
 import Downloads from '../screens/Downloads';
 import More from '../screens/More';
+import Artwork from '../screens/Artworks';
+import Language from '../screens/Language';
+import AdvanceSetting from '../screens/AdvanceSetting';
+import BackUpRestore from '../screens/Backup&Restore';
+import ManageAccount from '../screens/ManageAccount';
 
 const AppNavigator = createStackNavigator(
   {
@@ -31,6 +36,15 @@ const AppNavigator = createStackNavigator(
   }
 );
 
+const MoreStacking = createStackNavigator({
+  More : More,
+  Artwork : Artwork,
+  Language : Language,
+  AdvanceSetting : AdvanceSetting,
+  BackUpRestore : BackUpRestore,
+  ManageAccount : ManageAccount
+});
+
 const TabNavigator = createBottomTabNavigator(
   {
     DISCOVER: {
@@ -46,7 +60,7 @@ const TabNavigator = createBottomTabNavigator(
       screen: Downloads
     },
     MORE: {
-      screen: More
+      screen: MoreStacking
     }
   },
   {

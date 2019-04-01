@@ -8,6 +8,10 @@ class AdvanceSetting extends Component {
     };
   }
 
+  static navigationOptions = {
+    title: 'Advance Settings'
+  };
+
   render() {
     return (
       <View>

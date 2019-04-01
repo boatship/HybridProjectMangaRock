@@ -8,6 +8,10 @@ class ManageAccount extends Component {
     };
   }
 
+  static navigationOptions = {
+    title: 'Manage Account'
+  };
+
   render() {
     return (
       <View>

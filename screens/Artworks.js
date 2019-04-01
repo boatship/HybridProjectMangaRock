@@ -8,6 +8,10 @@ class Artworks extends Component {
     };
   }
 
+  static navigationOptions = {
+    title: 'Artworks'
+  };
+
   render() {
     return (
       <View>

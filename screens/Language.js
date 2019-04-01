@@ -8,6 +8,10 @@ class Language extends Component {
     };
   }
 
+  static navigationOptions = {
+    title: 'Language'
+  };
+
   render() {
     return (
       <View>

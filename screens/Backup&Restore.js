@@ -8,6 +8,10 @@ class Backup extends Component {
     };
   }
 
+  static navigationOptions = {
+    title: 'Backup & Restore'
+  };
+
   render() {
     return (
       <View>

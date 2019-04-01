@@ -12,6 +12,8 @@ export default class Favorites extends Component {
   render() {
     return (
       <View>
+        
+        <ScrollView>
         <Header
           placement="right"
           backgroundColor="white"
@@ -64,6 +66,7 @@ export default class Favorites extends Component {
         </Text>
         <ScrollView>
           <Favorite2 />
+        </ScrollView>
         </ScrollView>
       </View>
     );

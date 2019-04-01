@@ -26,8 +26,9 @@ export default class More extends Component {
   render() {
     return (
       <View>
+        
         <ScrollView>
-          <Header
+        <Header
             placement="left"
             backgroundColor="white"
             leftComponent={{

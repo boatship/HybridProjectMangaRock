@@ -12,6 +12,7 @@ export default class Downloads extends Component {
   render() {
     return (
       <View>
+        <ScrollView>
         <Header
           placement="right"
           backgroundColor="white"
@@ -26,6 +27,7 @@ export default class Downloads extends Component {
             shadowRadius: 10,
           }}
         />
+        </ScrollView>
       </View>
     );
   }

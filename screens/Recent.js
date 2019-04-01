@@ -14,6 +14,8 @@ export default class Recent extends Component {
   render() {
     return (
       <View>
+        
+        <ScrollView>
         <Header
           placement="right"
           backgroundColor="white"
@@ -28,7 +30,6 @@ export default class Recent extends Component {
             shadowRadius: 10,
           }}
         />
-        <ScrollView>
           <Recent2/>
         </ScrollView>
         
